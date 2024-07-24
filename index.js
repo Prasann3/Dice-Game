@@ -8,8 +8,7 @@ const dice_img=document.querySelector('.dice');
 let random_roll=function(){
     let dice=Math.round(6*Math.random());
     if(dice==0)dice=1;
-    if(dice==1)return 6;
-    // if(Math.round(6*Math.random())<=1)dice=1;
+    if(Math.round(6*Math.random())<=1)dice=1;
     return dice;
 }
 
